@@ -8,7 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: Check licenses
+    name: Check Files
     steps:
       - uses: actions/checkout@v2
       - run: ls -lha
