@@ -27,9 +27,6 @@ jobs:
         run: |
           echo ${ENV}
           echo ${OPS}
-          echo ${{secrets.TEXTO}}
-          echo ${{secrets.SENHA}} | base64 --decode
-
-
-
+          echo ${{ secrets.TEXTO }}
+          echo ${{ secrets.SENHA }} | base64 --decode
 
