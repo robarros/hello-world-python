@@ -7,6 +7,10 @@ on:
   pull_request: 
     branches: 
       - main
+
+env:
+  OPS: devops
+
 jobs:
   checkout:
     runs-on: ubuntu-latest
@@ -17,4 +21,12 @@ jobs:
         run: |
           pwd
           ls -lha
+      - name: input variables
+        env:
+          ENV: Produção
+        run: |
+          echo ${ENV}
+          echo ${OPS}
+
+
 
