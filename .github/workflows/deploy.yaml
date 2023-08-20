@@ -39,6 +39,5 @@ jobs:
       - name: List Files
         run: |
           pwd
-          cd $HOME
           ls -lha
           hostname
